@@ -1,0 +1,276 @@
+.serv
+    padding-top: 85px
+    padding-bottom: 100px
+    &__title
+        margin-top: 0
+        margin-bottom: 42px
+        font-weight: 700
+        font-size: 40px
+        line-height: 48px
+        color: #0053A7
+        &.tac
+            text-align: center
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 49px
+    &__block
+        height: 348px
+        overflow: hidden
+        border-radius: 20px
+        position: relative
+    &__img
+        width: 100%
+        height: 100%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all 4.7s
+    &__name
+        background: #F9F9F9
+        height: 108px
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        font-weight: 700
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #0054AC
+        transition: all 0.5s
+    &__hid
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        background: rgba(#99D90E, 0.7)
+        opacity: 0
+        transition: all 0.7s
+        &-line
+            width: 100%
+            padding: 30px 32px
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+        &-name
+            font-weight: 700
+            font-size: 16px
+            line-height: 19px
+            display: block
+            color: #FFFFFF
+            margin-bottom: 15px
+        &-text
+            font-weight: 400
+            font-size: 16px
+            line-height: 160.52%
+            color: #FFFFFF
+        &-cont
+            max-width: calc(100% - 50px)
+        &-arrow
+            width: 36px
+            height: 36px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #fff
+            margin-bottom: 5px
+    &__block
+        &:hover
+            .serv
+                &__img img
+                    transform: scale(1.4)
+                &__name
+                    opacity: 0
+                &__hid
+                    opacity: 1
+.servin
+    padding-top: 95px
+    padding-bottom: 70px
+    &__top
+        display: flex
+        justify-content: space-between
+        margin-bottom: 90px
+    &__img
+        width: 546px
+        max-width: 48%
+        height: 405px
+        overflow: hidden
+        border-radius: 18px
+        img
+            width: 100%
+            height: 100%
+    &__cont
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 555px
+        max-width: 49%
+    &__title
+        margin-top: 0
+        margin-bottom: 15px
+        font-weight: 700
+        font-size: 40px
+        line-height: 48px
+        color: #0053A7
+    &__quote
+        background: #F9F9F9
+        border-radius: 0px 20px 20px 0px
+        border-left: 6px solid #99D90E
+        padding: 25px 30px
+        padding-right: 40px
+        display: flex
+        align-items: center
+        grid-gap: 32px
+        &-text
+            width: calc(100% - 105px)
+            font-weight: 400
+            font-size: 16px
+            line-height: 160.02%
+            color: #000000
+            margin: 0
+            b
+                color: #0053A7
+    &__subtitle
+        font-weight: 700
+        font-size: 16px
+        line-height: 160.02%
+        color: #0053A7
+        margin-bottom: 32px
+        max-width: 400px
+    &__main
+        h3
+            font-weight: 700
+            font-size: 16px
+            line-height: 160.02%
+            margin-bottom: 16px
+            margin-top: 0
+            color: #0053A7
+        p
+            margin-bottom: 35px
+            margin-top: 0
+            font-size: 16px
+            line-height: 160.02%
+            color: #000000
+            span, b
+                color: #0053A7
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+            margin-bottom: 35px
+            max-width: 700px
+            li
+                position: relative
+                font-size: 16px
+                line-height: 160.02%
+                color: #000000
+                padding-left: 40px
+                &::before
+                    content: ""
+                    width: 16px
+                    height: 26px
+                    display: block
+                    position: absolute
+                    top: 0
+                    left: 0
+                    background: url('../img/servin-list.svg') center no-repeat
+    &-qa
+        &__block
+            background: #FFFFFF
+            box-shadow: 0px 4px 4px rgba(0, 83, 167, 0.3)
+            border-radius: 18px
+            margin-bottom: 32px
+            overflow: hidden
+        &__cont
+            display: none
+            padding: 45px 80px
+            font-weight: 400
+            font-size: 16px
+            line-height: 160.02%
+            color: #000000
+            &>p
+                margin-top: 0
+                margin-bottom: 26px
+            span
+                display: block
+                color: #0053A7
+                text-transform: uppercase
+                font-weight: 700
+                margin-bottom: 26px
+            b
+                display: block
+                color: #0053A7
+                font-weight: 700
+                margin-bottom: 26px
+            ul
+                margin: 0
+                padding: 0
+                list-style-type: none
+                margin-bottom: 25px
+                max-width: 700px
+                &.big
+                    max-width: 100%
+                    li
+                        margin-bottom: 26px
+                li
+                    position: relative
+                    font-size: 16px
+                    line-height: 160.02%
+                    color: #000000
+                    padding-left: 40px
+                    b
+                        display: inline
+                    &::before
+                        content: ""
+                        width: 16px
+                        height: 26px
+                        display: block
+                        position: absolute
+                        top: 0
+                        left: 0
+                        background: url('../img/servin-list.svg') center no-repeat
+        &__name
+            padding: 22px 78px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            font-weight: 700
+            font-size: 16px
+            line-height: 160.02%
+            color: #0054AC
+            border-radius: 18px
+            transition: all 0.3s
+            cursor: pointer
+            path, svg
+                transition: all 0.3s
+            span
+                max-width: calc(100% - 50px)
+            &:hover
+                background: #0053A7
+                box-shadow: 0px 4px 4px #0053A7
+                color: #FFFFFF
+                path
+                    stroke: #fff
+        &__block.active
+            .servin-qa
+                &__name
+                    background: #0053A7
+                    box-shadow: 0px 4px 4px #0053A7
+                    color: #FFFFFF
+                    svg
+                        transform: rotate(180deg)
+                    path
+                        stroke: #fff
+                &__cont
+                    display: block
