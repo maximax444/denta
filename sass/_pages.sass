@@ -157,15 +157,23 @@
             align-items: center
             justify-content: space-between
             border-bottom: 1px solid rgba(#0053A7, 0.5)
+            &:last-child
+                border-bottom: 0
             span
                 font-weight: 400
                 font-size: 14px
                 line-height: 159.02%
                 color: #0053A7
                 margin-bottom: 0
+                &:last-child
+                    width: 100px
+                    text-align: right
+                &:first-child
+                    width: calc(100% - 120px)
 .about
     &-gal
         padding: 100px 0
+        overflow: hidden
         &__nav
             display: flex
             justify-content: center
@@ -197,6 +205,134 @@
                     width: 100%
                     height: 100%
                     object-fit: cover
+                    border-radius: 18px
             &.swiper-slide-active
                 padding: 0
                 height: 300px
+@media(max-width: 991px)
+    .about
+        &-gal
+            .swiper
+                height: 200px
+            &__block
+                padding: 0 25px
+                height: 150px
+                &.swiper-slide-active
+                    height: 200px
+    .features
+        &__block
+            display: block
+            padding: 50px 0
+        &__cont
+            width: 100%
+        &__block:nth-child(2n) .features__img
+            border-radius: 50%
+        &__img
+            width: 100px
+            height: 100px
+            background: #99D90E
+            border-radius: 50%
+            overflow: hidden
+            margin: 0 auto
+            &::before
+                display: none
+            img
+                max-width: 90%
+                max-height: 90%
+        &.stock
+            .features
+                &__block
+                    padding-top: 0
+                &__img
+                    width: 100%
+                    background: transparent
+                    height: 400px
+                    border-radius: 18px
+                    img
+                        width: 100%
+                        height: 100%
+                        max-width: 100%
+                        max-height: 100%
+                        object-fit: cover
+    .know
+        &__link
+            bottom: 0
+@media(max-width: 767px)
+    .price__cont .servin__title
+        margin-bottom: 40px
+    .price
+        padding-bottom: 50px
+        &__text
+            margin-bottom: 0
+        .price__text
+            margin-bottom: 40px
+    .about
+        &-gal
+            padding: 40px 0
+@media(max-width: 575px)
+    .features
+        padding: 50px 0
+        &__title
+            font-size: 28px
+            margin-bottom: 40px
+            line-height: normal
+        &__block
+            padding: 40px 0
+            text-align: center
+            margin-bottom: 40px
+        &__cont
+            padding: 40px 30px
+            padding-bottom: 0
+        &__text
+            p
+                font-size: 14px
+                line-height: 22px
+                margin-bottom: 22px
+        &__name
+            font-size: 18px
+            line-height: normal
+        &.stock
+            .features
+                &__img
+                    height: 200px
+    .know
+        &__link
+            position: static
+            width: 200px
+            margin: 0 auto
+            margin-top: 40px
+    .knowin__back
+        margin-bottom: 40px
+    .price
+        &__text
+            font-size: 14px
+            p
+                font-size: 14px
+    .prices
+        &__title
+            font-size: 22px
+            line-height: normal
+        &__subtitle
+            font-size: 14px
+            margin-bottom: 40px
+        &-qa
+            &__line
+                padding: 18px 35px
+                grid-gap: 0
+                span
+                    font-size: 15px
+                    &:last-child
+                        width: 80px
+                    &:first-child
+                        width: calc(100% - 80px)
+    .about
+        padding-bottom: 0
+        .price__text
+            margin-bottom: 0
+        &-gal
+            &__block
+                &.swiper-slide-active
+            .swiper
+                margin: 0
+            &__nav
+                padding-top: 40px

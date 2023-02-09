@@ -56,7 +56,7 @@
                 display: block
                 width: 100%
                 margin-bottom: 22px
-                padding: 22px 36px	
+                padding: 22px 36px
                 font-weight: 600
                 font-size: 14px
                 line-height: 17px
@@ -71,7 +71,7 @@
                 display: block
                 width: 100%
                 margin-bottom: 22px
-                padding: 22px 36px	
+                padding: 22px 36px
                 font-weight: 600
                 font-size: 14px
                 line-height: 17px
@@ -137,7 +137,7 @@
                 display: block
                 width: 100%
                 margin-bottom: 22px
-                padding: 22px 36px	
+                padding: 22px 36px
                 font-weight: 600
                 font-size: 14px
                 line-height: 17px
@@ -171,7 +171,7 @@
                     border-bottom: 1px solid rgba(0, 83, 167, 0.5)
                     &:last-child
                         border-bottom: 0
-            &:hover
+            &.active
                 .home-take__select
                     &-top
                         border-radius: 18px 18px 0 0
@@ -207,7 +207,7 @@
                 position: absolute
                 left: -35px
                 top: 135px
-                background: #99D90E 
+                background: #99D90E
         &__title
             margin-top: 0
             margin-bottom: 60px
@@ -239,7 +239,7 @@
                 margin-bottom: 28px
         &__cont
             padding: 60px 0
-            padding-bottom: 180px   
+            padding-bottom: 180px
         &__nav
             position: absolute
             bottom: 0
@@ -295,7 +295,7 @@
             &:hover
                 background-color: #0053A7
                 path
-                    stroke:#fff
+                    stroke: #fff
     &-feat
         padding: 35px 0
         &__wrap
@@ -356,7 +356,7 @@
         &:hover
             background-color: #0053A7
             path
-                stroke:#fff 
+                stroke: #fff
     &__img
         position: absolute
         right: 0
@@ -408,3 +408,143 @@
         text-decoration: none
         &:hover
             background: #99D90E
+@media(max-width: 1199px)
+    .home
+        &-why
+            &__img
+                right: -100px
+                width: 500px
+                height: 500px
+@media(max-width: 991px)
+    .home
+        &-why
+            &__img
+                right: -250px
+        &-feat
+            &__wrap
+                flex-wrap: wrap
+                grid-gap: 25px 0
+            &__block
+                width: 50%
+    .main
+        &__nav
+            top: 430px
+            bottom: auto
+        &__title
+            padding-top: 100px
+        &__block
+            height: auto
+        &__img
+            position: static
+            width: 100%
+            height: 400px
+        &__link
+            display: inline-block
+            margin-bottom: 40px
+@media(max-width: 767px)
+    .home-why
+        &__img
+            position: static
+            width: 100px
+            height: 100px
+            margin: 0 auto
+            border-radius: 50%
+            background: #99D90E
+            margin-bottom: 40px
+            img
+                max-width: 90%
+                max-height: 90%
+            &::after
+                display: none
+@media(max-width: 575px)
+    .main
+        text-align: center
+        &__img
+            height: 240px
+        &__nav
+            top: 260px
+            &-wrap
+                justify-content: center
+        &__title
+            padding-top: 90px
+            font-size: 28px
+            line-height: normal
+            margin-bottom: 30px
+        &__descr
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 20px
+        &__price
+            margin-bottom: 20px
+            font-size: 20px
+    .home
+        &-why
+            text-align: center
+            &__prev, &__next
+                background-color: #0053A7
+                path
+                    stroke: #fff
+            &__cont
+                padding-bottom: 20px
+                padding-top: 0px
+            &__text
+                font-size: 14px
+                p
+                    margin-bottom: 22px
+            &__title
+                font-size: 26px
+                line-height: normal
+                margin-bottom: 100px
+                span
+                    font-size: 18px
+                    line-height: normal
+            &__pages
+                display: none
+            &__nav
+                bottom: auto
+                top: 100px
+                &-wrap
+                    justify-content: center
+        &-feat
+            padding: 25px 0
+            &__wrap
+                grid-gap: 20px 0
+            &__text
+                font-size: 18px
+                line-height: 22px
+            &__name
+                font-size: 40px
+            &__block
+                &:nth-child(3)
+                    order: -2
+                &:nth-child(1)
+                    order: -1
+        &-consult
+            display: none
+            &__title
+                font-size: 18px
+                line-height: normal
+                margin-bottom: 10px
+            &__subtitle
+                font-size: 18px
+                line-height: normal
+        &-take
+            padding-top: 50px
+            &__subtitle
+                font-size: 16px
+                margin-bottom: 30px
+            &__form
+                width: 100%
+                .check p
+                    width: calc(100% - 40px)
+                    margin-left: 10px
+            &__select
+                &-drop a
+                    line-height: normal
+                &-top
+                    grid-gap: 10px
+    .main
+        &__next, &__prev
+            background-color: #0053A7
+            path
+                stroke: #fff
